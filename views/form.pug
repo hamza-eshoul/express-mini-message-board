@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    form(method='POST' action='/new')
+      h1 Form Heading
+      |  author name :
+      input(name='authorName')
+      |  message text :
+      input(name='messageText')
+      input(type='submit' value='Submit Form')
+    a(href='/')  Go back to main page

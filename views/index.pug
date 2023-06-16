@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  each n in messages  
+    ul 
+      li User Name :  #{n.user}
+      li User Text :  #{n.text}
+      li Text Added in :  #{n.added}
+
+  a(href='/new')  Go to new page
+  p Welcome to #{title}
+  
